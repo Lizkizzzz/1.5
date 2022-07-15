@@ -1,0 +1,153 @@
+/*glob*/
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    min-height: content-box;
+    font-family: 'TT Lakes', 'sans-serif';
+    font-size: 0;
+
+    background-color: #F2F2F2;
+}
+
+.list {
+    padding: 0;
+    list-style: none;
+}
+
+.btn {
+    padding: 0;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+}
+
+.text {
+    margin: 0;
+}
+
+/*title*/
+
+.title {
+    margin: 0;
+}
+
+.brand-repair_title {
+    padding: 16px;
+
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #7E7E82;
+
+    border-top: 1px solid #D9FFF5;
+    background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+}
+
+/*brand-repair_swiper*/
+
+
+
+.swiper-pagination {
+    bottom: 0;
+    top: 183px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    margin: 0 12px 0 0;
+    background-color: #B5B6BC;
+}
+
+
+/*brand-repair_list*/
+.brand-repair_tablet-visability {
+    display: none;
+}
+
+.brand-repair_swiper_list {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 16px;
+}
+
+.brand-list_item {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 240px;
+
+    background-color: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+}
+
+.brand-list_item--lenovo {
+    padding: 16px;
+}
+
+.brand-list_item--samsung {
+    padding: 17px 16px;
+}
+
+.brand-list_item--apple {
+    padding: 12px 16px 16px;
+}
+
+.brand-list_item--view-sonic {
+    padding: 16px 16px 16px 14px;
+}
+
+.brand-list_item--bosch {
+    padding: 16px;
+}
+
+.brand-list_item--hp {
+    padding: 10px 16px 10px 10px;
+}
+
+.brand-list_item--acer {
+    padding: 16px;
+}
+
+.brand-list_item--sony {
+    padding: 16px 16px 16px 14px;
+}
+
+/*brand-repair buttons*/
+
+.brand-repair_btn {
+    display: none;
+    align-items: center;
+
+    padding-left: 32px;
+
+    background-color: #F2F2F2;
+}
+
+/*js styles*/
+
+
+

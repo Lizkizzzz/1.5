@@ -1,0 +1,101 @@
+@media (min-width: 768px) {
+    body {
+        min-width: 768px;
+    }
+
+    .brand-repair_title {
+        padding: 16px 24px;
+    }
+
+    .brand-repair_swiper {
+        display: none;
+    }
+
+    .swiper-pagination {
+        display: none;
+    }
+
+    .brand-repair_tablet-visability {
+        display: flex;
+    }
+
+    .brand-repair_list {
+        display: flex;
+        flex-direction: row;
+
+        align-items: center;
+        justify-content: normal;
+        flex-wrap: wrap;
+        overflow-y: hidden;
+
+        max-width: 1015px;
+
+        padding: 24px 24px 0;
+    }
+
+    .brand-repair_list--hidden {
+        max-height: 212px;
+    }
+
+    .brand-list_item {
+        width: 224px;
+    }
+
+    .brand-list_item:not(:nth-of-type(3n)) {
+        margin-right: 24px;
+    }
+
+    .brand-list_item {
+        margin-bottom: 24px;
+    }
+
+    .brand-repair_btn--visible {
+        display: flex;
+    }
+
+    .btn_text {
+        padding-left: 17px;
+    }
+
+    .brand-repair_text {
+        font-family: "TT Lakes", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #1B1C21;
+    }
+}
+
+
+@media (min-width: 1120px) {
+    body {
+        min-width: 1120px;
+    }
+
+    .brand-repair_title {
+        padding: 16px 32px;
+    }
+
+    .brand-repair_list {
+        min-width: 1120px;
+
+        padding:  24px 0 0 32px;
+    }
+
+    .brand-list_item {
+        min-width: 240px;
+        margin-right: 0;
+    }
+
+    .brand-list_item:not(:nth-of-type(4n)) {
+        margin-right: 32px;
+    }
+
+    .brand-repair_btn {
+        padding-left: 39px;
+    }
+
+}
+
+/*js styles*/
+
