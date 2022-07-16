@@ -87,6 +87,7 @@ body {
     background-color: #FFFFFF;
     border: 1px solid #EAEAEA;
     border-radius: 6px;
+
 }
 
 .brand-repair_link {
@@ -104,7 +105,7 @@ body {
 }
 
 .brand-list_item--samsung {
-    padding: 17px 16px;
+    padding:16px;
 }
 
 .brand-list_item--apple {
@@ -147,5 +148,3 @@ body {
 .brand-repair_btn_svg {
     transform: rotate(180deg);
 }
-
-

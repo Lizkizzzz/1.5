@@ -11,10 +11,6 @@
         display: none;
     }
 
-    .brand-repair_tablet-visability {
-
-    }
-
     .brand-repair_list {
         box-sizing: border-box;
         display: grid;
@@ -87,5 +83,3 @@
     }
 
 }
-
-/*js styles*/
