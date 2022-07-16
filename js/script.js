@@ -1,30 +1,41 @@
-let openButton = document.querySelector('.brand-repair_btn--all-brands');
-let closeButton = document.querySelector('.brand-repair_btn--some-brands');
-let hiddenList = document.querySelector('.brand-repair_list');
+function ready() {
+    const button = document.querySelector('.brand-repair_btn');
+    const hiddenList = document.querySelector('.brand-repair_list');
+    const btnText = button.querySelector('.btn_text');
+    const btnSVG = button.querySelector('svg');
 
-openButton.addEventListener('click', function (evt) {
-    evt.preventDefault();
-    hiddenList.classList.remove(`brand-repair_list--hidden`);
-    openButton.classList.remove('brand-repair_btn--visible');
-    closeButton.classList.add('brand-repair_btn--visible');
-})
+    let openAllBrands = function () {
+        if (btnText.textContent === 'Показать все') {
+            hiddenList.classList.remove(`brand-repair_list--hidden`);
+            btnSVG.classList.add('brand-repair_btn_svg');
+            btnText.textContent = 'Скрыть';
+        } else {
+            hiddenList.classList.add(`brand-repair_list--hidden`);
+            btnSVG.classList.remove('brand-repair_btn_svg');
+            btnText.textContent = 'Показать все';
+        }
+    }
 
-closeButton.addEventListener('click', function (evt) {
-    evt.preventDefault();
-    hiddenList.classList.add('brand-repair_list--hidden');
-    openButton.classList.add('brand-repair_btn--visible');
-    closeButton.classList.remove('brand-repair_btn--visible');
-})
+    button.addEventListener('click', openAllBrands);
 
-new Swiper('.brand-repair_swiper',
-    {
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        spaceBetween: 16,
-        slidesPerView: 'auto',
-    });
+    if (window.matchMedia('(max-width: 767px)').matches) {
+        new Swiper('.brand-repair_swiper',
+            {
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                spaceBetween: 16,
+                slidesPerView: 'auto',
+            });
+    }
+
+
+}
+
+document.addEventListener("DOMContentLoaded", ready);
+
+
 
 
 

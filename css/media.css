@@ -7,30 +7,22 @@
         padding: 16px 24px;
     }
 
-    .brand-repair_swiper {
-        display: none;
-    }
-
     .swiper-pagination {
         display: none;
     }
 
     .brand-repair_tablet-visability {
-        display: flex;
+
     }
 
     .brand-repair_list {
-        display: flex;
-        flex-direction: row;
-
-        align-items: center;
-        justify-content: normal;
-        flex-wrap: wrap;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 224px 224px 224px;
+        gap: 24px;
         overflow-y: hidden;
 
-        max-width: 1015px;
-
-        padding: 24px 24px 0;
+        padding: 24px;
     }
 
     .brand-repair_list--hidden {
@@ -41,15 +33,8 @@
         width: 224px;
     }
 
-    .brand-list_item:not(:nth-of-type(3n)) {
-        margin-right: 24px;
-    }
 
-    .brand-list_item {
-        margin-bottom: 24px;
-    }
-
-    .brand-repair_btn--visible {
+    .brand-repair_btn {
         display: flex;
     }
 
@@ -78,8 +63,14 @@
 
     .brand-repair_list {
         min-width: 1120px;
+        grid-template-columns: 240px 240px 240px 240px;
+        gap: 16px 32px;
 
-        padding:  24px 0 0 32px;
+        padding:  24px 0 24px 32px;
+    }
+
+    .brand-repair_list--hidden {
+        max-height: 206px;
     }
 
     .brand-list_item {
@@ -98,4 +89,3 @@
 }
 
 /*js styles*/
-

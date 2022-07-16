@@ -59,8 +59,6 @@ body {
 
 /*brand-repair_swiper*/
 
-
-
 .swiper-pagination {
     bottom: 0;
     top: 183px;
@@ -75,33 +73,30 @@ body {
 
 
 /*brand-repair_list*/
-.brand-repair_tablet-visability {
-    display: none;
-}
 
 .brand-repair_swiper_list {
-    display: flex;
-    flex-direction: row;
-
-    align-items: center;
-    justify-content: space-between;
-
     padding: 16px;
+    margin-right: 20px;
 }
 
 .brand-list_item {
     box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-
-    align-items: center;
-    justify-content: space-between;
 
     max-width: 240px;
 
     background-color: #FFFFFF;
     border: 1px solid #EAEAEA;
     border-radius: 6px;
+}
+
+.brand-repair_link {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
 }
 
 .brand-list_item--lenovo {
@@ -149,5 +144,8 @@ body {
 
 /*js styles*/
 
+.brand-repair_btn_svg {
+    transform: rotate(180deg);
+}
 
 
